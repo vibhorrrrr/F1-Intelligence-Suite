@@ -1,5 +1,8 @@
 # F1 Strategy Intelligence Suite - Dependencies
 
+# Web server
+gunicorn>=20.1.0
+
 # Core scientific computing
 numpy>=1.24.0
 pandas>=2.0.0
