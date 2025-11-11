@@ -1,6 +1,6 @@
 [build]
-  command = "pip install -r requirements.txt && python setup.py"
-  publish = "build"
+  command = "pip install -r requirements.txt"
+  publish = "ui/assets"
   functions = "functions"
 
 [dev]
@@ -13,7 +13,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["dash"]

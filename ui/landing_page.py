@@ -9,7 +9,13 @@ from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 
 # Initialize app with Bootstrap theme
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG], suppress_callback_exceptions=True)
+app = dash.Dash(
+    __name__, 
+    external_stylesheets=[dbc.themes.CYBORG], 
+    suppress_callback_exceptions=True,
+    requests_pathname_prefix='/'
+)
+server = app.server  # Expose the server for WSGI
 app.title = "F1 Strategy Intelligence Suite"
 
 # Color scheme
