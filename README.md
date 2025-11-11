@@ -1,6 +1,6 @@
 # 🏎️ F1 Race Strategy Intelligence Suite
 
-> **A professional-grade Formula 1 race strategy simulation and analysis platform designed for portfolio showcase and technical demonstration.**
+> **A professional-grade Formula 1 race strategy simulation and analysis platform designed for technical demonstration.**
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
