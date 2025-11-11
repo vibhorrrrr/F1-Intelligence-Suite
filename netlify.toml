@@ -1,0 +1,19 @@
+[build]
+  command = "pip install -r requirements.txt && python setup.py"
+  publish = "build"
+  functions = "functions"
+
+[dev]
+  framework = "#custom"
+  targetPort = 8050
+  port = 8888
+  command = "python ui/landing_page.py"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["dash"]
