@@ -1,0 +1,104 @@
+/* F1 Strategy Suite - Custom Styles */
+
+:root {
+    --f1-red: #FF1E00;
+    --f1-dark: #0d1117;
+    --f1-surface: #161b22;
+    --f1-green: #00D2BE;
+    --f1-text: #E6EDF3;
+    --f1-text-secondary: #8B949E;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--f1-dark);
+    color: var(--f1-text);
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--f1-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--f1-text-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--f1-red);
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+/* Card hover effects */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 30, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Pulse animation for live indicator */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.live-indicator {
+    animation: pulse 2s infinite;
+}
+
+/* Graph styling */
+.js-plotly-plot {
+    border-radius: 8px;
+}
+
+/* Slider styling */
+.rc-slider-track {
+    background-color: var(--f1-red) !important;
+}
+
+.rc-slider-handle {
+    border-color: var(--f1-red) !important;
+}
+
+.rc-slider-handle:hover {
+    border-color: var(--f1-red) !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    border: 3px solid var(--f1-surface);
+    border-top: 3px solid var(--f1-red);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
